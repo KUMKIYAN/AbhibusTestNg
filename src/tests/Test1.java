@@ -29,11 +29,11 @@ public class Test1 {
             homePage = new HomePage(driver);
 
             String homePageTitile = homePage.getMainBannerToolTip();
-            Assert.assertTrue(homePageTitile.equals("abhibus.com - India's Fastest Online bus ticket booking site"));
+            Assert.assertEquals(homePageTitile, "abhibus.com - India's Fastest Online bus ticket booking site");
 
             homePage.setTravelingFrom("Hyderabad");
             homePage.setTravelingTo("Tirupathi");
-            homePage.setTravelingDates("19-04-2019", "22-04-2019");
+            homePage.setTravelingDates("25-04-2019", "30-04-2019");
             homePage.search();
 
             bookATicketPage = new BookATicketPage(driver);
