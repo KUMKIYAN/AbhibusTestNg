@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class Main {
 public static void main(String args[]){
     WebElement seat;
-    System. setProperty("webdriver.chrome.driver", "/Users/nisum/Documents/drivers/chromedriver");
+    System. setProperty("webdriver.chrome.driver", "/Users/kikumar/Documents/drivers/chromedriver");
     WebDriver driver=new ChromeDriver();
     driver.get("https://www.abhibus.com/");
    // driver.manage().window().maximize();
